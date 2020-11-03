@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6a0e110-b813-4b9c-9e8b-f3a6920fcba6" name="Default Changelist" comment="" />
+    <list default="true" id="e6a0e110-b813-4b9c-9e8b-f3a6920fcba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/petersjpaopgave.iml" beforeDir="false" afterPath="$PROJECT_DIR$/petersjpaopgave.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jpaopgave/peter/PeterApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/petersjpaopgave.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jpaopgave/peter/PeterApplicationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +41,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/opgaveaflevering" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -60,6 +70,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager">
     <configuration name="PeterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -83,6 +94,7 @@
       <workItem from="1602744554197" duration="23222000" />
       <workItem from="1603445544071" duration="9171000" />
       <workItem from="1604395985035" duration="542000" />
+      <workItem from="1604396830934" duration="260000" />
     </task>
     <servers />
   </component>
@@ -98,6 +110,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602763314688" />
+    <state x="719" y="361" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1604397090990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="361" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604397090990" />
     <state x="765" y="211" key="#com.intellij.ide.util.MemberChooser" timestamp="1603445766825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -154,6 +170,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="342" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603459421711" />
+    <state x="463" y="150" key="SettingsEditor" timestamp="1604396861167">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604396861167" />
     <state x="668" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1604395984990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
