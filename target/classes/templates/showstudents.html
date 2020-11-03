@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/index.css" rel="stylesheet" type="text/css">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="/ms-icon-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
+
+    <style>
+        body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: Black;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .navbar-nav li a:hover {
+            color: #1abc9c !important;
+        }
+    </style>
+
+    <title>Student List</title>
+</head>
+<body>
+<h1>List of students</h1>
+<div class="table-striped" id="viewStudent">
+    <br>
+    <header>
+        <a data-target="#modalCreateStudForm" data-toggle="modal" href="#"
+           style="margin-left: 3.9em; font: 24px Montserrat;">Create new student</a>
+        <h3 style="margin-left: 3.9em">List of all students</h3>
+    </header>
+    <table class="table-striped" style="width: 90%;   margin-left: auto;
+           margin-right: auto;">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last name</th>
+            <th>Psychologist</th>
+            <th>Delete</th>
+            <th>Update</th>
+
+        </tr>
+        </thead>
+        <tr th:each="student: ${students}">
+            <td th:text="${student.id}"/>
+            <td th:text="${student.firstName}"/>
+            <td th:text="${student.lastName}"/>
+            <td th:text="${student.psychologist}"/>
+            <td>
+                <a th:href="@{'/deletestudent/'+${student.id}}">
+                    <button class="btnDeleteStudent" onclick="return confirm('Are you sure you want to delete?')">
+                        Delete
+                    </button>
+                </a>
+            </td>
+            <td>
+                <a class="btnUpdateStudent" data-target="#modalUpdateStudForm" data-toggle="modal"
+                   href="#" th:data-label="${student.id}">UPDATE</a>
+            </td>
+        </tr>
+    </table>
+</div><br><br>
+
+<div class="table-striped" id="viewCourse">
+    <br>
+    <header>
+        <a data-target="#modalCreateCourseForm" data-toggle="modal" href="#"
+           style="margin-left: 3.9em; font: 24px Montserrat;">Create new course</a>
+        <h3 style="margin-left: 3.9em">List of all courses</h3>
+    </header>
+    <table class="table-striped" style="width: 90%;   margin-left: auto;
+           margin-right: auto;">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Course name</th>
+            <th>Delete</th>
+            <th>Update</th>
+
+        </tr>
+        </thead>
+        <tr th:each="course: ${courses}">
+            <td th:text="${course.id}"/>
+            <td th:text="${course.name}"/>
+            <td>
+                <a th:href="@{'/deletecourse/'+${course.id}}">
+                    <button class="btnDeleteCourse" onclick="return confirm('Are you sure you want to delete?')">
+                        Delete
+                    </button>
+                </a>
+            </td>
+            <td>
+                <a class="btnUpdateCourse" data-target="#modalUpdateCourseForm" data-toggle="modal"
+                   href="#" th:data-label="${course.id}">UPDATE</a>
+            </td>
+        </tr>
+    </table>
+</div><br><br>
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalCreateStudForm" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModaStudlLabel">Create student</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/createstudent" method="POST">
+                    <div class="form-group">
+                        <label class="col-form-label">First Name</label>
+                        <input class="form-control" name="firstName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Last Name</label>
+                        <input class="form-control" name="lastName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Psychologist id</label>
+                        <input class="form-control" name="psychologist" type="text">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Create</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="table-striped" id="viewPsychologist">
+    <br>
+    <header>
+        <a data-target="#modalCreatePsyForm" data-toggle="modal" href="#"
+           style="margin-left: 3.9em; font: 24px Montserrat;">Create new Psychologist</a>
+        <h3 style="margin-left: 3.9em">List of all psychologists</h3>
+    </header>
+    <table class="table-striped" style="width: 90%;   margin-left: auto;
+           margin-right: auto;">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last name</th>
+            <th>Delete</th>
+            <th>Update</th>
+
+        </tr>
+        </thead>
+        <tr th:each="psychologist: ${psychologists}">
+            <td th:text="${psychologist.id}"/>
+            <td th:text="${psychologist.firstName}"/>
+            <td th:text="${psychologist.lastName}"/>
+            <td>
+                <a th:href="@{'/deletepsychologist/'+${psychologist.id}}">
+                    <button class="btnDeletePsychologist" onclick="return confirm('Are you sure you want to delete?')">
+                        Delete
+                    </button>
+                </a>
+            </td>
+            <td>
+                <a class="btnUpdatePsychologist" data-target="#modalUpdatePsyForm" data-toggle="modal"
+                   href="#" th:data-label="${psychologist.id}">UPDATE</a>
+            </td>
+        </tr>
+    </table>
+</div><br><br>
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalCreatePsyForm" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create Psychologist</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="/showstudents" method="POST">
+                    <div class="form-group">
+                        <label class="col-form-label">First Name</label>
+                        <input class="form-control" name="firstName" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="col-form-label">Last Name</label>
+                        <input class="form-control" name="lastName" type="text">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" type="submit">Create</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
