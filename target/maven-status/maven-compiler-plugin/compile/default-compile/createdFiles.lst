@@ -1,0 +1,14 @@
+com\jpaopgave\peter\repository\CourseRepo.class
+com\jpaopgave\peter\controller\HomeController.class
+com\jpaopgave\peter\model\Student.class
+com\jpaopgave\peter\service\StudentService.class
+com\jpaopgave\peter\model\Task.class
+com\jpaopgave\peter\model\StudentPsychologist.class
+com\jpaopgave\peter\service\StudentPsychologistService.class
+com\jpaopgave\peter\model\Course.class
+com\jpaopgave\peter\service\CourseService.class
+com\jpaopgave\peter\PeterApplication.class
+com\jpaopgave\peter\repository\StudentRepo.class
+com\jpaopgave\peter\controller\RestfullController.class
+com\jpaopgave\peter\repository\StudentPsychologistRepo.class
+com\jpaopgave\peter\repository\TaskRepo.class
