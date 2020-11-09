@@ -33,6 +33,6 @@ public class Task {
         this.name = name;
     }
 
-    public void doNothing(){
+    public void doesNothing(){
     }
 }
