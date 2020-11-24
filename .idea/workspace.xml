@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e6a0e110-b813-4b9c-9e8b-f3a6920fcba6" name="Default Changelist" comment="" />
+    <list default="true" id="e6a0e110-b813-4b9c-9e8b-f3a6920fcba6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +91,7 @@
       <workItem from="1604396830934" duration="1188000" />
       <workItem from="1604562949291" duration="1487000" />
       <workItem from="1604915315181" duration="651000" />
+      <workItem from="1605259315552" duration="153000" />
     </task>
     <servers />
   </component>
@@ -174,14 +177,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="463" y="150" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604562977702" />
-    <state x="668" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1604562954869">
+    <state x="668" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1605259321703">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604562954869" />
-    <state x="342" y="226" key="new project wizard" timestamp="1604567298093">
+    <state x="668" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605259321703" />
+    <state x="342" y="226" key="new project wizard" timestamp="1605259463561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="226" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1604567298093" />
+    <state x="342" y="226" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605259463561" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1602749710100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
