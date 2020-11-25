@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a0e110-b813-4b9c-9e8b-f3a6920fcba6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpaopgave/peter/controller/RestfullController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpaopgave/peter/controller/RestfullController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +95,7 @@
       <workItem from="1604915315181" duration="651000" />
       <workItem from="1605259315552" duration="153000" />
       <workItem from="1606218121023" duration="491000" />
-      <workItem from="1606307748004" duration="1196000" />
+      <workItem from="1606307748004" duration="2106000" />
     </task>
     <servers />
   </component>

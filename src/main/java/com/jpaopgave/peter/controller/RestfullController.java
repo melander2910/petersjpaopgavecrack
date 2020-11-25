@@ -47,7 +47,7 @@ public class RestfullController {
         taskRepo.save(task);
         return null;
 
-        
+
     }
 }
 
